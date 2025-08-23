@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Messy ToDo</title>
+    <!-- links -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center bg-gradient-to-tr from-[#153677] to-[#4e085f] w-full h-[100vh]"
+    >
+      <div class="w-[35rem] rounded-3xl shadow p-10 bg-gray-100">
+        <h3 class="pb-3 pl-2 text-2xl font-medium">To-Do List</h3>
+        <div
+          class="bg-[#edeef0] rounded-4xl pl-5 mb-6 flex items-center justify-between"
+        >
+          <input
+            type="text"
+            id="input"
+            class="bg-transparent border-0 outline-0 p-2.5 flex-1 w-4/5"
+            placeholder="Put your text"
+          />
+          <button
+            onclick="addTask()"
+            class="cursor-pointer border-0 px-5 py-2 text-xl bg-[#ff5945] outline-0 text-white rounded-4xl"
+          >
+            Add
+          </button>
+        </div>
+        <ul id="lTodo" class="list-none">
+          <!-- <li class="cheacked">task1</li>
+          <li>task1</li>
+          <li>task1</li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
